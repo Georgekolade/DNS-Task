@@ -1,32 +1,5 @@
 <?php
 
-/*namespace App\Actions;
-
-use execute;
-use Illuminate\Support\Facades\Http;
-
-class VerifyDomainAction
-{
-    public function execute(string $domain): bool
-    {
-        // Check if any 'A' records exist for the domain
-        $dnsRecordsExist = checkdnsrr($domain, 'A');
-
-        // If no 'A' records exist for the domain, return false
-        if (!$dnsRecordsExist) {
-            return false;
-        }
-
-        // Check if the resolved IP matches the server's IP
-        $serverIpAddress = gethostbyname(gethostname());
-        $resolvedIp = gethostbyname($domain);
-
-        return $resolvedIp === $serverIpAddress;
-    }
-}
-
-<?php*/
-
 namespace App\Actions;
 
 class VerifyDomainAction
