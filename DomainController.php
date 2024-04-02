@@ -6,7 +6,6 @@ use execute;
 use Illuminate\Http\Request;
 use App\Actions\VerifyDomainAction;
 
-// use App\Actions\VerifyDomainAction;
 class DomainController extends Controller
 {
     public function verify(Request $request)
@@ -30,21 +29,3 @@ class DomainController extends Controller
         }
     }
 }
-
-// class DomainController extends Controller
-// {
-//     public function verify(Request $request, VerifyDomainAction $verifyDomainAction, $domain)
-//     {
-//         $isVerified = $verifyDomainAction->execute($domain);
-
-//         if ($isVerified) {
-//             return response()->json(['message' => 'Domain verification successful'], 200);
-//         } else {
-//             return response()->json(['message' => 'Domain verification failed'], 400);
-//         }
-//     }
-// }
-
-
-// <?php
-
