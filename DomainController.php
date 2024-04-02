@@ -12,9 +12,7 @@ class DomainController extends Controller
     public function verify(Request $request)
     {
         // Assuming $serverIpAddress holds your server's IP address
-        // $serverIpAddress = gethostbyname(gethostname());
-
-        $serverIpAddress = '170.64.172.126';
+        $serverIpAddress = gethostbyname(gethostname());
         
         // Create an instance of the VerifyDomainConnection action class
         $verifyDomainConnection = new VerifyDomainAction($serverIpAddress);
